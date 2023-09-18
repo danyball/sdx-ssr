@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+<script type="module" src="static/select.js"></script>
+
+<script>
+
+</script>
+
+</head>
+
+<body>
+
+
+
+
+
+	<h1 class="h1">Hello World</h1>
+
+	<sdx-button label="sdx" onclick="console.log('testing sdx')"></sdx-button>
+
+<p>
+<sdx-input-item type="checkbox" oninput="console.log('Checked:', arguments[0].target.checked)">
+  A single stand-alone checkbox
+</sdx-input-item>
+
+<p>
+
+<sdx-input label="Label" placeholder="Placeholder"></sdx-input>
+
+<p>
+    <sdx-card label="Card" label-aria-level="2" href="javascript:;" href-label="Link" href-aria-label="Open new website.">
+      <p class="margin-bottom-2">Card content</p>
+      <ul class="list single-line margin-0">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ul>
+    </sdx-card>
+<p>
+
+    <sdx-select
+      keyboard-behavior="filter"
+      placeholder="Choose your car..."
+      label="Which car will you buy today?"
+      filter-min-length="2"
+      oninput="console.log('Selected:', arguments[0].target.value)"
+    ><sdx-select-option value="chevrolet">Chevrolet</sdx-select-option>
+              <sdx-select-option value="chrysler">Chrysler</sdx-select-option>
+              <sdx-select-option value="mazda">Mazda</sdx-select-option>
+              <sdx-select-option value="mg">MG</sdx-select-option>
+              <sdx-select-option value="toyota" disabled>Toyota</sdx-select-option>
+    </sdx-select>
+
+        <p></p>
+    <sdx-tabs sr-hint="Tabs with text.">
+        <sdx-tabs-item label="Tab 1">This is the content of Tab 1.</sdx-tabs-item>
+        <sdx-tabs-item label="Tab 2">This is the content of Tab 2.</sdx-tabs-item>
+        <sdx-tabs-item label="Tab 3 with very long text that will be truncated" selected>This is the content of Tab 3.</sdx-tabs-item>
+        <sdx-tabs-item label="Tab 4">This is the content of Tab 4.</sdx-tabs-item>
+        <sdx-tabs-item label="Tab 5 with extra text">This is the content of Tab 5.</sdx-tabs-item>
+        <sdx-tabs-item label="Tab 6" disabled>This is the content of the disabled Tab 6.</sdx-tabs-item>
+    </sdx-tabs>
+
+	<script>
+	console.log("script running")
+	</script>
+</body>
+
+</html>
