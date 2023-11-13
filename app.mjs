@@ -46,7 +46,7 @@ app.get('/', function (req, res) {
         });
 });
 
-
+app.use('/sdx', express.static('sdx'))
 
 app.listen(port, function (error) {
     if (error)
